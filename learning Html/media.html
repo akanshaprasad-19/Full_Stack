@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA HTMLt</title>
+    <style>
+        /* flex is used in child -parrents class only */
+        body{
+            display: flex;
+        }
+        .box{
+            display: flex;
+            height: 70px;
+            width: 60px;
+            border: 2px solid blue;
+            margin: 10px;
+            text-align: center;
+        }
+        /* @media(max-width:500px){
+            body{
+                background-color:yellowgreen;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        } */
+         @media (min-width:501px) and (max-width:786px){
+            body {
+                background-color: blueviolet;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            } 
+            .box{
+                border: 3px solid red;
+                background-color: brown;
+                border-radius: 50px;
+                text-align: center;
+                justify-content: center;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+
+        <div class="box">one</div>
+    <div class="box">two</div>
+    <div class="box">three</div>
+    <div class="box">four</div>
+</body>
+</html>

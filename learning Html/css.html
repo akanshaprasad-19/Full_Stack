@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css- basics</title>
+</head>
+<style>
+    body {
+        background-color: #8D3DAF;
+        color: aquamarine;
+    }   
+/*universal selector*/
+p{
+    background-color: #6A1B4D;
+    color: aliceblue;
+    padding: 5;
+}
+/*indivdual selector*/
+.warning{
+    background-color:#E03B8B;
+}
+/*class and id selector*/
+/*id=#*/
+#danger{
+    background-color:#5A20CB;
+}
+/*and selector (chained)*/
+li.bg-black.text-white{
+background-color: #6A1B4D;
+color: aqua;
+}
+/* combined selector*/
+span, li {
+background-color: #E21717;
+}
+/*inside an element*/
+div ul li {
+    background-color: #3944F7;
+}   
+/*direct child */
+div > p {
+    background-color: #3DBE29;
+} 
+/* sibling ~ or + */
+.sibling + p {
+    background-color: #F4BE2C;
+}
+
+</style>
+<body>
+   <h1 class="warning">
+    welcome to my world
+   </h1> 
+   <br>
+   <h2 id="danger">
+    COFFEE AND CODE
+   </h2>
+   <div>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorum! Dolores et maxime voluptatum placeat, ab vel praesentium nostrum laudantium at atque nisi dolor, quibusdam quidem excepturi. Reiciendis, corrupti maiores.
+    Magnam fugiat, veniam asperiores ut ipsa facilis fugit, suscipit esse molestiae at quae nam fuga similique deserunt voluptates iure enim numquam minus dolor voluptatem, dolores omnis necessitatibus hic? Sint, reprehenderit?
+    Corrupti ullam ipsum, animi quaerat et quidem, saepe voluptatem dolorem soluta pariatur ab totam similique dignissimos mollitia! Eveniet tempora omnis ipsum, ducimus hic, quaerat voluptas minus incidunt voluptatibus pariatur quod.
+    Facilis iste quis provident!  deserunt laborum dolor ipsa maxime commodi blanditiis perferendis? Harum facilis id quidem delectus alias accusamus esse officia adipisci aliquid.
+    Fugit officiis rerum a quibusdam, commodi dolores optio inventore ducimus provident, aspernatur accusantium consequuntur, excepturi natus eius deleniti consectetur corporis molestiae consequatur culpa dicta explicabo quia asperiores tempora corrupti. Dolore!
+    Est sed optio, laboriosam excepturi repellat facere animi ipsa ducimus. Quia, vitae placeat odit soluta aut obcaecati necessitatibus ratione, consectetur nisi ea alias cumque facere maxime consequatur itaque minus? Corrupti.</p>
+<li  class="bg-black text-white"> akansha</li>
+<li  class="bg-black text-white">deepak</li>
+<br>
+<span>  hey akansha you are so beautiful </span>
+<div>
+<ul>
+    <li> Hena </li>
+    <li> keshav </li>
+    <li> Monu </li>
+    <li> sonu </li>
+    <li> Nicky </li>
+</ul>
+<section>
+    <p>java is my first language </p>
+    <p class="sibling">c  is my second language </p>
+    <p>  web dev is my third language </p>
+</section>
+</body>
+</html>
