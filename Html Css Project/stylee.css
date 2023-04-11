@@ -25,7 +25,7 @@ main{
     margin: 10%;
 }
 .leftmain{
-    display: flex;
+    /* display: flex; */
     width:40%;
 }
 .leftmain h1{
